@@ -1,0 +1,76 @@
+/* Establecer variables CSS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+:root {
+  --primary-color: #396e94;
+  --secondary-color: #e7c24f;
+  --accent1-color: #c7e70e;
+  --accent2-color: #381d2a;
+  --heading-font: 'Montserrat', sans-serif;
+  --paragraph-font: 'Roboto', sans-serif;
+  --nav-background-color: #f0f0f0;
+  --nav-link-color: #333;
+  --nav-hover-link-color: #0099ff;
+  --nav-hover-background-color: #ddd;
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Estilos para los encabezados */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* Estilos para los párrafos */
+p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los enlaces */
+a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para el encabezado */
+header {
+  padding: 20px;
+  background-color: var(--accent1-color);
+}
+
+/* Estilos para la navegación */
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
